@@ -1,9 +1,23 @@
 import React from 'react'
+import VideoCard from './VideoCard'
+import './SearchResults.css'
 
-function SearchResults() {
+function SearchResults( {videos} ) {
+
+    // const clickk = () => {
+    //     console.log(props.videos);
+    // }
+
+
     return (
-        <div>
-            
+        <div className="SearchResults">
+            {
+                videos.map(video =>{
+                    return <VideoCard key={video.id.videoId} video={video}/>    
+                    }
+                )
+            }
+            {/* <button onClick={clickk}> cHECK</button> */}
         </div>
     )
 }

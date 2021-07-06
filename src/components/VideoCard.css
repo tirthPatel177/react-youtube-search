@@ -1,0 +1,31 @@
+.videoCard {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1fr 4fr; */
+    width: 75%;
+    justify-content: flex-start;
+    
+    margin-bottom: 40px;
+    box-shadow: 2px 0.5px rgb(148, 143, 143);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 20%;
+
+}
+
+.content {
+    width: 74%;
+    padding: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
