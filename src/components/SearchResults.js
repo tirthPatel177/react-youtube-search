@@ -13,7 +13,7 @@ function SearchResults( {videos} ) {
         <div className="SearchResults">
             {
                 videos.map(video =>{
-                    return <VideoCard key={video.id.videoId} video={video}/>    
+                    return <VideoCard key={video.id.videoId || video.id.channelId} video={video}/>    
                     }
                 )
             }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import './Searchbar.css';
 
@@ -7,9 +7,9 @@ function Searchbar({Search}) {
 
     const [text, setText] = useState('');
 
-    useEffect(() => {
-        console.log(text);
-    }, [text])
+    // useEffect(() => {
+    //     console.log(text);
+    // }, [text])
 
     const handleChange = (e) => {
         setText(e.target.value);

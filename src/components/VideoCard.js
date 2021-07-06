@@ -9,7 +9,7 @@ const VideoCard = ({video}) => {
     // };
 
     return (
-        <div class="videoCard">
+        <div className="videoCard">
             
             <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.description}></img>
             <div className="content">
